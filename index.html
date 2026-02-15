@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>ادخلي يا دوده ❤️</title>
+
+<style>
+body{
+    background:#f8f9fa;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Tajawal, Arial;
+}
+.box{
+    background:white;
+    padding:45px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    text-align:center;
+    width:320px;
+}
+h2{color:#444;}
+input{
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    margin-top:15px;
+    font-size:16px;
+}
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    background:#6c8cff;
+    color:white;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>يا حبوبي 💙</h2>
+<p>ادخلي التاريخ اللي بدأ فيه كل حاجة</p>
+<input type="password" id="pass">
+<button onclick="check()">دخول</button>
+<p id="msg" style="color:#ff4d6d"></p>
+</div>
+
+<script>
+function check(){
+    var password="772024"; // غير التاريخ هنا
+    if(document.getElementById("pass").value===password){
+        window.location="love.html";
+    }else{
+        document.getElementById("msg").innerText="غلط يا دوده 😌";
+    }
+}
+</script>
+
+</body>
+</html>
